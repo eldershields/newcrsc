@@ -1,0 +1,641 @@
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.schedule-page {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f8fbff 60%,
+            #edf5ff 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box;
+
+    padding-bottom: 50px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.schedule-header {
+    width: 100%;
+
+    height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 55px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.95);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.schedule-logo {
+    width: 120px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.schedule-logo img {
+    width: 120px;
+
+    height: auto;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.schedule-navigation {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 42px;
+}
+
+
+.schedule-nav-item {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+    cursor: pointer;
+
+    padding: 42px 0 14px 0;
+
+    white-space: nowrap;
+
+    position: relative;
+
+    text-decoration: none;
+}
+
+.schedule-nav-item:hover {
+    color: rgb(14, 14, 133);
+    padding-bottom: -2px; 
+   border-bottom: 2px solid rgb(14, 14, 133);;
+}
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.schedule-socials {
+    width: 120px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 20px;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+.schedule-socials a {
+    color: rgb(14, 14, 133);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.schedule-title-section {
+    width: calc(100% - 130px);
+
+    margin: 25px auto 15px auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.schedule-title-section h1 {
+    margin: 0;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 34px;
+
+    font-weight: 800;
+}
+
+
+.schedule-title-section p {
+    margin: 5px 0 0 0;
+
+    color: #68788e;
+
+    font-size: 13px;
+}
+
+
+.schedule-season {
+    color: rgb(14, 14, 133);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    padding-right: 15px;
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.schedule-filters {
+    width: calc(100% - 130px);
+
+    margin: 0 auto 20px auto;
+
+    display: flex;
+
+    border-bottom: 1px solid #dfe5ec;
+}
+
+
+.schedule-filter {
+    padding: 12px 25px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    color: #333333;
+
+    cursor: pointer;
+
+    border-right: 1px solid #dfe5ec;
+}
+
+
+.schedule-filter-active {
+    color: white;
+
+    background: rgb(14, 14, 133);
+
+    border-radius: 3px 3px 0 0;
+}
+
+
+/* =========================================
+   GAMES
+========================================= */
+
+.games-container {
+    width: calc(100% - 130px);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================
+   GAME CARD
+========================================= */
+
+.game-card {
+    width: 100%;
+
+    min-height: 115px;
+
+    display: grid;
+
+    grid-template-columns:
+        100px
+        90px
+        1.5fr
+        1.4fr
+        110px
+        100px;
+
+    align-items: center;
+
+    background: white;
+
+    border: 1px solid #e0e6ee;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.05);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.game-date {
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgb(14, 14, 133);
+
+    color: white;
+}
+
+
+.game-day {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+
+.game-date-number {
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   HOME / AWAY
+========================================= */
+
+.game-type {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.home-label,
+.away-label {
+    padding: 7px 12px;
+
+    border-radius: 3px;
+
+    font-size: 9px;
+
+    font-weight: 800;
+}
+
+
+.home-label {
+    background: #e8f1ff;
+
+    color: rgb(14, 14, 133);
+}
+
+
+.away-label {
+    background: #f0f0f0;
+
+    color: #555555;
+}
+
+
+/* =========================================
+   OPPONENT
+========================================= */
+
+.game-opponent {
+    padding-left: 15px;
+}
+
+
+.vs-text {
+    color: #8996a8;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+
+.game-opponent h2 {
+    margin: 0;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.game-location {
+    color: #39485b;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.location-title {
+    color: rgb(14, 14, 133);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================================
+   TIME
+========================================= */
+
+.game-time {
+    color: #222222;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+.time-title {
+    color: rgb(14, 14, 133);
+
+    font-size: 9px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.game-status {
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.game-status div {
+    color: rgb(14, 14, 133);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    border: 1px solid rgb(14, 14, 133);
+
+    padding: 7px 10px;
+
+    border-radius: 3px;
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.schedule-note {
+    width: calc(100% - 130px);
+
+    margin: 25px auto 0 auto;
+
+    text-align: center;
+
+    color: #7a8797;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .schedule-header {
+        padding: 0 30px;
+    }
+
+
+    .schedule-navigation {
+        gap: 25px;
+    }
+
+
+    .schedule-title-section,
+    .schedule-filters,
+    .games-container,
+    .schedule-note {
+        width: calc(100% - 70px);
+    }
+
+
+    .game-card {
+        grid-template-columns:
+            85px
+            80px
+            1.3fr
+            1.2fr
+            90px
+            90px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .schedule-header {
+        height: auto;
+
+        min-height: 90px;
+
+        padding: 15px 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .schedule-logo {
+        width: auto;
+    }
+
+
+    .schedule-logo img {
+        width: 60px;
+    }
+
+
+    .schedule-navigation {
+        width: 100%;
+
+        order: 3;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        gap: 25px;
+    }
+
+
+    .schedule-nav-item {
+        padding-top: 10px;
+
+        padding-bottom: 12px;
+
+        font-size: 11px;
+    }
+
+
+    .schedule-socials {
+        margin-left: auto;
+
+        width: auto;
+    }
+
+
+    .schedule-title-section {
+        width: calc(100% - 40px);
+
+        align-items: flex-start;
+
+        margin-top: 25px;
+    }
+
+
+    .schedule-title-section h1 {
+        font-size: 27px;
+    }
+
+
+    .schedule-season {
+        display: none;
+    }
+
+
+    .schedule-filters {
+        width: calc(100% - 40px);
+
+        overflow-x: auto;
+    }
+
+
+    .games-container {
+        width: calc(100% - 40px);
+    }
+
+
+    .game-card {
+        display: grid;
+
+        grid-template-columns: 75px 1fr;
+
+        min-height: 180px;
+    }
+
+
+    .game-date {
+        grid-row: span 3;
+    }
+
+
+    .game-type {
+        justify-content: flex-start;
+
+        padding: 10px 15px 0 15px;
+    }
+
+
+    .game-opponent {
+        padding: 5px 15px;
+    }
+
+
+    .game-location {
+        padding: 5px 15px;
+    }
+
+
+    .game-time {
+        padding: 10px 15px;
+
+        text-align: left;
+    }
+
+
+    .game-status {
+        display: none;
+    }
+
+
+    .schedule-note {
+        width: calc(100% - 40px);
+    }
+
+}

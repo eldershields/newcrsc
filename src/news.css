@@ -1,0 +1,621 @@
+/* =========================================
+   MAIN NEWS PAGE
+========================================= */
+
+.news-page {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #ffffff 65%,
+            #f0f7ff 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box;
+
+    padding-bottom: 45px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.news-header {
+    width: 100%;
+
+    height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 55px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.95);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.news-logo {
+    width: 120px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.news-logo img {
+    width: 120px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.news-navigation {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 42px;
+}
+
+
+.news-nav-item {
+    position: relative;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+    cursor: pointer;
+
+    padding: 42px 0 14px 0;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+}
+
+.news-nav-item:hover {
+    color: rgb(14, 14, 133);
+    padding-bottom: -2px; 
+   border-bottom: 2px solid rgb(14, 14, 133);;
+}
+
+
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.news-socials {
+    width: 120px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+.news-socials a {
+    color: rgb(14, 14, 133);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.news-title-section {
+    width: calc(100% - 130px);
+
+    margin: 20px auto 15px auto;
+}
+
+
+.news-title-section h1 {
+    margin: 0;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   NEWS CONTENT
+========================================= */
+
+.news-content {
+    width: calc(100% - 130px);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.1fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   FEATURED NEWS
+========================================= */
+
+.featured-news {
+    background: white;
+
+    border: 1px solid #e2e7ee;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.featured-image {
+    width: 100%;
+
+    height: 245px;
+
+    overflow: hidden;
+}
+
+
+.featured-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   FEATURED BOTTOM
+========================================= */
+
+.featured-bottom {
+    display: flex;
+
+    min-height: 130px;
+}
+
+
+/* =========================================
+   DATE BOX
+========================================= */
+
+.featured-date {
+    width: 65px;
+
+    min-width: 65px;
+
+    background: rgb(14, 14, 133);
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.date-month {
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.date-number {
+    font-size: 29px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+
+/* =========================================
+   FEATURED INFORMATION
+========================================= */
+
+.featured-information {
+    padding: 13px 20px;
+}
+
+
+.featured-information h2 {
+    margin: 0 0 5px 0;
+
+    font-size: 17px;
+
+    color: rgb(14, 14, 133);
+
+    font-weight: 800;
+}
+
+
+.featured-information p {
+    margin: 0 0 12px 0;
+
+    font-size: 13px;
+
+    color: #333333;
+
+    line-height: 1.4;
+}
+
+
+.read-more {
+    font-size: 10px;
+
+    color: rgb(14, 14, 133);
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.read-more link {
+    color: rgb(14, 14, 133);
+    text-decoration: none;
+}
+
+
+/* =========================================
+   SMALL NEWS CONTAINER
+========================================= */
+
+.small-news-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   SMALL NEWS
+========================================= */
+
+.small-news {
+    display: flex;
+
+    min-height: 105px;
+
+    border-bottom: 1px solid #dce2e9;
+
+    padding-bottom: 12px;
+}
+
+
+.small-news-image {
+    width: 125px;
+
+    min-width: 125px;
+
+    height: 95px;
+
+    overflow: hidden;
+}
+
+
+.small-news-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   SMALL NEWS INFORMATION
+========================================= */
+
+.small-news-information {
+    padding-left: 15px;
+}
+
+
+.small-news-date {
+    font-size: 9px;
+
+    color: rgb(14, 14, 133);
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+
+.small-news-information h3 {
+    margin: 0 0 4px 0;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.small-news-information p {
+    margin: 0 0 7px 0;
+
+    font-size: 11px;
+
+    color: #333333;
+
+    line-height: 1.3;
+}
+
+
+.small-read-more {
+    font-size: 9px;
+
+    font-weight: 800;
+
+    color: rgb(14, 14, 133);
+}
+
+
+/* =========================================
+   VIEW ALL
+========================================= */
+
+.view-all-container {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+
+.view-all-button {
+    border: none;
+
+    background: rgb(14, 14, 133);
+
+    color: white;
+
+    padding: 12px 28px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    box-shadow:
+        0 3px 7px rgba(0, 0, 0, 0.12);
+}
+
+
+.view-all-button:hover {
+    background: rgb(14, 14, 133);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .news-header {
+        padding: 0 30px;
+    }
+
+    .news-navigation {
+        gap: 25px;
+    }
+
+    .news-nav-item {
+        font-size: 12px;
+    }
+
+    .news-title-section,
+    .news-content {
+        width: calc(100% - 70px);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .news-header {
+        height: auto;
+
+        min-height: 90px;
+
+        padding: 15px 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .news-logo {
+        width: auto;
+    }
+
+
+    .news-logo img {
+        width: 60px;
+    }
+
+
+    .news-navigation {
+        width: 100%;
+
+        order: 3;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        gap: 25px;
+
+        padding-top: 5px;
+    }
+
+
+    .news-nav-item {
+        padding-top: 10px;
+
+        padding-bottom: 12px;
+
+        font-size: 11px;
+    }
+
+
+    .news-socials {
+        margin-left: auto;
+
+        width: auto;
+    }
+
+
+    .news-title-section {
+        width: calc(100% - 40px);
+
+        margin-top: 25px;
+    }
+
+
+    .news-title-section h1 {
+        font-size: 27px;
+    }
+
+
+    .news-content {
+        width: calc(100% - 40px);
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .featured-image {
+        height: 230px;
+    }
+
+
+    .small-news-container {
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .featured-image {
+        height: 200px;
+    }
+
+
+    .featured-bottom {
+        min-height: 145px;
+    }
+
+
+    .featured-information {
+        padding: 12px;
+    }
+
+
+    .featured-information h2 {
+        font-size: 14px;
+    }
+
+
+    .featured-information p {
+        font-size: 11px;
+    }
+
+
+    .small-news-image {
+        width: 105px;
+
+        min-width: 105px;
+
+        height: 85px;
+    }
+
+
+    .small-news-information h3 {
+        font-size: 11px;
+    }
+
+
+    .small-news-information p {
+        font-size: 10px;
+    }
+
+} 

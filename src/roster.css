@@ -1,0 +1,428 @@
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.roster-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            120deg,
+            #ffffff 0%,
+            #f8fbff 55%,
+            #edf5ff 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box;
+
+    padding-bottom: 50px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.roster-header {
+    width: 100%;
+
+    height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 55px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.roster-logo {
+    width: 200px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+}
+
+
+.roster-logo img {
+    width: 120px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.roster-navigation {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 42px;
+}
+
+
+.roster-nav-item {
+    position: relative;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    color: #111111;
+
+    cursor: pointer;
+
+    padding: 42px 0 14px 0;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+}
+
+.roster-nav-item:hover {
+    color: rgb(14, 14, 133);
+    padding-bottom: -2px; 
+   border-bottom: 2px solid rgb(14, 14, 133);;
+}
+
+
+
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.roster-socials {
+    width: 120px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color:  rgb(14, 14, 133);
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+.roster-socials div {
+    cursor: pointer;
+}
+
+.roster-socials a {
+    color:  rgb(14, 14, 133);
+}
+
+
+/* =========================================
+   TITLE SECTION
+========================================= */
+
+.roster-title-section {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 65px 5px 65px;
+
+    box-sizing: border-box;
+}
+
+
+.roster-title h1 {
+    margin: 0;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   MOTTO
+========================================= */
+
+.roster-motto {
+    color:  rgb(14, 14, 133);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    text-align: right;
+
+    letter-spacing: 0.2px;
+
+    padding-right: 25px;
+}
+
+
+/* =========================================
+   FILTER SECTION
+========================================= */
+
+.roster-filters {
+    display: flex;
+
+    align-items: center;
+
+    margin: 5px 65px 15px 65px;
+
+    height: 40px;
+}
+
+
+.roster-filter {
+    padding: 11px 22px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #222222;
+
+    cursor: pointer;
+
+    border-right: 1px solid #d9dfe8;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+
+.roster-filter:hover {
+    color:  rgb(14, 14, 133);
+}
+
+
+/* Selected filter */
+
+.active-filter {
+    background:  rgb(14, 14, 133);
+
+    color: white;
+
+    border-radius: 3px;
+
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
+}
+
+
+.active-filter:hover {
+    color: white;
+}
+
+
+/* =========================================
+   PLAYER GRID
+========================================= */
+
+.players-grid {
+    width: calc(100% - 130px);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PLAYER CARD
+========================================= */
+
+.player-card {
+    min-width: 0;
+
+    height: 285px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid #e1e6ed;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.07);
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.player-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   PLAYER NUMBER / POSITION
+========================================= */
+
+.player-information {
+    position: absolute;
+
+    left: 17px;
+
+    top: 12px;
+
+    z-index: 2;
+}
+
+
+.player-number {
+    color:  rgb(14, 14, 133);
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+.player-position {
+    color:  rgb(14, 14, 133);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    margin-top: 4px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   PLAYER IMAGE
+========================================= */
+
+.player-image-container {
+    height: 235px;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    padding-top: 15px;
+
+    box-sizing: border-box;
+}
+
+
+.player-image {
+    height: 225px;
+
+    max-width: 90%;
+
+    width: auto;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.player-divider {
+    width: 100%;
+
+    height: 1px;
+
+    background: #cbd3df;
+}
+
+
+/* =========================================
+   PLAYER NAME
+========================================= */
+
+.player-name {
+    height: 48px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: #111111;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.3px;
+}

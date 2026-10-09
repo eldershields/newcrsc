@@ -1,0 +1,547 @@
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.contact-page {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f8fbff 65%,
+            #edf5ff 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding-bottom: 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.contact-header {
+    width: 100%;
+
+    height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 55px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.95);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.contact-logo {
+    width: 120px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.contact-logo img {
+    width: 120px;
+
+    height: auto;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.contact-navigation {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 42px;
+}
+
+
+.contact-nav-item {
+    position: relative;
+
+    color: #111111;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    padding: 42px 0 14px 0;
+
+    white-space: nowrap;
+    
+    text-decoration: none;
+}
+
+
+.contact-nav-item:hover {
+    color: rgb(14, 14, 133);
+    padding-bottom: -2px; 
+   border-bottom: 2px solid rgb(14, 14, 133);;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.contact-socials {
+    width: 120px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 20px;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+.contact-socials a {
+     color: rgb(14, 14, 133);
+}
+
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.contact-title {
+    width: calc(100% - 130px);
+
+    margin: 35px auto 25px auto;
+}
+
+
+.contact-title h1 {
+    margin: 0;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 34px;
+
+    font-weight: 800;
+}
+
+
+.contact-title p {
+    margin: 7px 0 0 0;
+
+    color: #66768a;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.contact-content {
+    width: calc(100% - 130px);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   FORM CONTAINER
+========================================= */
+
+.contact-form-container {
+    background: white;
+
+    border: 1px solid #e0e6ee;
+
+    border-radius: 4px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.contact-form-container h2,
+.contact-information h2 {
+    margin: 0 0 25px 0;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   INPUT GROUP
+========================================= */
+
+.contact-input-group {
+    margin-bottom: 17px;
+}
+
+
+.contact-input-group label {
+    display: block;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+
+.contact-input-group input,
+.contact-input-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cbd3df;
+
+    border-radius: 3px;
+
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    color: #222222;
+}
+
+
+.contact-input-group input {
+    height: 45px;
+
+    padding: 0 13px;
+}
+
+
+.contact-input-group textarea {
+    height: 125px;
+
+    resize: vertical;
+
+    padding: 13px;
+}
+
+
+.contact-input-group input:focus,
+.contact-input-group textarea:focus {
+    border-color: #174b91;
+
+    box-shadow:
+        0 0 0 2px rgba(23, 75, 145, 0.08);
+}
+
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+.contact-submit {
+    width: 100%;
+
+    height: 47px;
+
+    border: none;
+
+    border-radius: 3px;
+
+    background: rgb(14, 14, 133);
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+.contact-submit:hover {
+    background: rgb(14, 14, 133);
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-information {
+    background: rgb(14, 14, 133);
+
+    color: white;
+
+    border-radius: 4px;
+
+    padding: 35px 30px;
+
+    box-sizing: border-box;
+}
+
+
+.contact-information h2 {
+    color: white;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   INFORMATION ITEMS
+========================================= */
+
+.contact-info-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 17px;
+
+    margin-bottom: 30px;
+}
+
+
+.contact-info-icon {
+    width: 38px;
+
+    height: 38px;
+
+    min-width: 38px;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 15px;
+}
+
+
+.contact-info-item h3 {
+    margin: 0 0 5px 0;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+.contact-info-item p {
+    margin: 0;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    color: #e5efff;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.contact-message {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+}
+
+
+.contact-message h3 {
+    margin: 0 0 10px 0;
+
+    font-size: 12px;
+}
+
+
+.contact-message p {
+    margin: 0;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: #e5efff;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .contact-header {
+        padding: 0 30px;
+    }
+
+
+    .contact-navigation {
+        gap: 25px;
+    }
+
+
+    .contact-title,
+    .contact-content {
+        width: calc(100% - 70px);
+    }
+
+
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .contact-header {
+        height: auto;
+
+        min-height: 90px;
+
+        padding: 15px 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .contact-logo {
+        width: auto;
+    }
+
+
+    .contact-logo img {
+        width: 60px;
+    }
+
+
+    .contact-navigation {
+        width: 100%;
+
+        order: 3;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        gap: 25px;
+    }
+
+
+    .contact-nav-item {
+        padding-top: 10px;
+
+        padding-bottom: 12px;
+
+        font-size: 11px;
+    }
+
+
+    .contact-socials {
+        width: auto;
+
+        margin-left: auto;
+    }
+
+
+    .contact-title {
+        width: calc(100% - 40px);
+
+        margin-top: 25px;
+    }
+
+
+    .contact-title h1 {
+        font-size: 27px;
+    }
+
+
+    .contact-content {
+        width: calc(100% - 40px);
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+
+
+    .contact-information {
+        padding: 30px 25px;
+    }
+
+}

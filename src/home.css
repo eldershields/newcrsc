@@ -1,0 +1,667 @@
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.home-page {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+    background-image: url("./photos/homepagecrsc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+    
+    
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.home-header {
+    width: 100%;
+
+    height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 55px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.home-logo {
+    width: 200px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.home-logo img {
+    width: 120px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.home-navigation {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 42px;
+}
+
+
+.home-nav-item {
+    position: relative;
+
+    color: #111111;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    padding: 42px 0 14px 0;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+}
+
+.home-nav-item:hover {
+    color: rgb(14, 14, 133);
+    padding-bottom: -2px; 
+   border-bottom: 2px solid rgb(14, 14, 133);;
+}
+
+
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.home-socials {
+    width: 120px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color: rgb(14, 14, 133);
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+.home-socials div {
+    cursor: pointer;
+}
+
+.home-socials a {
+     color: rgb(14, 14, 133);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.home-hero {
+    width: 100%;
+
+    min-height: 500px;
+
+    display: flex;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.home-hero-content {
+    width: 48%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding-left: 9%;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+/* =========================================
+   WELCOME
+========================================= */
+
+.welcome-text {
+    color: rgb(14, 14, 133);
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   CRSC
+========================================= */
+
+.crsc-title {
+    color: rgb(14, 14, 133);
+
+    font-size: clamp(75px, 9vw, 145px);
+
+    line-height: 0.85;
+
+    font-weight: 900;
+
+    letter-spacing: -4px;
+
+    margin-left: -5px;
+}
+
+
+/* =========================================
+   SOCCER CLUB
+========================================= */
+
+.soccer-club-title {
+    color: rgb(14, 14, 133);
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    letter-spacing: 6px;
+
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.home-description {
+    color: rgb(14, 14, 133);
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 25px 0;
+}
+
+
+/* =========================================
+   LATEST NEWS BUTTON
+========================================= */
+
+.latest-news-button {
+    width: 135px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 3px;
+
+    background: rgb(14, 14, 133);
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+.latest-news-button:hover {
+    background: #103c7a;
+}
+
+
+
+
+/* =========================================
+   BOTTOM FEATURES
+========================================= */
+
+.home-features {
+    width: 100%;
+
+    min-height: 105px;
+
+    background: rgb(14, 14, 133);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 35px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FEATURE
+========================================= */
+
+.home-feature {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    max-width: 280px;
+}
+
+
+.feature-large-icon {
+    font-size: 34px;
+
+    font-weight: bold;
+
+    width: 45px;
+
+    text-align: center;
+}
+
+
+.feature-content h3 {
+    margin: 0 0 4px 0;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+.feature-content p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #e5efff;
+}
+
+
+/* =========================================
+   DIVIDERS
+========================================= */
+
+.home-feature-divider {
+    width: 1px;
+
+    height: 35px;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    margin: 0 20px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .home-header {
+        padding: 0 30px;
+    }
+
+
+    .home-navigation {
+        gap: 25px;
+    }
+
+
+    .home-nav-item {
+        font-size: 12px;
+    }
+
+
+    .home-hero-content {
+        padding-left: 6%;
+    }
+
+
+    .welcome-text {
+        font-size: 21px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .soccer-club-title {
+        font-size: 15px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .home-description {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .home-header {
+        height: auto;
+
+        min-height: 90px;
+
+        padding: 15px 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .home-logo {
+        width: auto;
+    }
+
+
+    .home-logo img {
+        width: 60px;
+    }
+
+
+    .home-navigation {
+        width: 100%;
+
+        order: 3;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        gap: 25px;
+
+        padding-top: 5px;
+    }
+
+
+    .home-nav-item {
+        padding-top: 10px;
+
+        padding-bottom: 12px;
+
+        font-size: 11px;
+    }
+
+
+    .home-socials {
+        width: auto;
+
+        margin-left: auto;
+    }
+
+
+    /* HERO */
+
+    .home-hero {
+        min-height: 620px;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    .home-hero-content {
+        width: 100%;
+
+        height: 400px;
+
+        padding: 45px 25px 20px 25px;
+
+        justify-content: flex-start;
+
+        align-items: flex-start;
+    }
+
+
+    .welcome-text {
+        font-size: 19px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .crsc-title {
+        font-size: 75px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .soccer-club-title {
+        font-size: 13px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .home-description {
+        font-size: 12px;
+
+        margin: 20px 0;
+    }
+
+
+    .home-hero-image {
+        width: 100%;
+
+        height: 300px;
+
+        right: 0;
+
+        top: auto;
+
+        bottom: 0;
+
+        justify-content: center;
+    }
+
+
+    .home-hero-image img {
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    .home-hero-image::before {
+        width: 100%;
+
+        height: 45%;
+
+        top: 0;
+
+        left: 0;
+
+        background:
+            linear-gradient(
+                180deg,
+                #f6faff 0%,
+                rgba(246, 250, 255, 0) 100%
+            );
+    }
+
+
+    /* FEATURES */
+
+    .home-features {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 20px;
+
+        gap: 20px;
+
+        min-height: auto;
+    }
+
+
+    .home-feature {
+        max-width: none;
+
+        justify-content: flex-start;
+    }
+
+
+    .home-feature-divider {
+        display: none;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .home-hero {
+        min-height: 580px;
+    }
+
+
+    .home-hero-content {
+        height: 350px;
+
+        padding: 40px 20px 15px 20px;
+    }
+
+
+    .welcome-text {
+        font-size: 16px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .crsc-title {
+        font-size: 65px;
+    }
+
+
+    .soccer-club-title {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .home-description {
+        font-size: 11px;
+    }
+
+
+    .home-hero-image {
+        height: 275px;
+    }
+
+
+    .home-features {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        padding: 25px;
+    }
+
+
+    .home-feature {
+        justify-content: center;
+    }
+
+}
